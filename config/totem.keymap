@@ -65,10 +65,10 @@
 
         media {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans           &trans             &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp C_PREV  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans           &trans             &trans      &trans
+                        &trans  &trans  &trans    &trans  &trans      &trans
             >;
         };
     };
