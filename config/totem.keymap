@@ -23,25 +23,7 @@
            &kp Q            &kp W           &kp E        &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P
            &mt LEFT_META A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_META SEMI
 &kp LCTRL  &kp Z            &kp X           &kp C        &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH             &kp APOS
-                                            &kp ESCAPE   &lt 1 SPACE       &lt 3 TAB    &kp ENTER  &kp BACKSPACE      &kp DELETE
-            >;
-        };
-
-        nav_num {
-            bindings = <
-                   &kp LA(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp DELETE     &kp LA(DELETE)        &kp N5      &kp N6           &kp N7       &kp N8    &kp N9
-                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp DOWN   &kp RIGHT      &kp LA(RIGHT)         &kp N0      &kp N1           &kp N2       &kp N3    &kp N4
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LG(LEFT)   &kp ENTER  &kp LG(RIGHT)  &kp LG(DOWN_ARROW)    &kp PERIOD  &kp PLUS         &kp MINUS    &kp STAR  &kp FSLH  &kp CARET
-                                                      &trans     &trans         &trans                &kp EQUAL   &kp RIGHT_SHIFT  &kp PERCENT
-            >;
-        };
-
-        sym_func {
-            bindings = <
-           &kp ESC        &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &none             &kp F1   &kp F2           &kp F3   &kp F4   &kp F5
-           &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH          &kp F6   &kp F7           &kp F8   &kp F9   &kp F10
-&kp GRAVE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp UNDERSCORE    &kp F11  &kp F12          &kp F13  &kp F14  &kp F15  &kp F16
-                                                &trans                 &trans            &trans            &none    &kp RIGHT_SHIFT  &none
+                                            &kp ESCAPE   &lt 0 SPACE       &lt 1 TAB    &kp ENTER  &lt 2 BACKSPACE    &kp DELETE
             >;
         };
 
@@ -54,19 +36,40 @@
             >;
         };
 
-        extra1 { status = "reserved"; };
+        numbers {
+            bindings = <
+        &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &kp N0  &trans    &trans  &trans  &trans
+            >;
+        };
 
-        extra2 { status = "reserved"; };
+        func {
+            bindings = <
+        &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans
+        &kp F11  &kp F4  &kp F5  &kp F6  &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans             &trans  &trans  &trans
+            >;
+        };
 
-        extra3 { status = "reserved"; };
+        media {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         device {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <1 1>;
+            then-layer = <1>;
         };
     };
 };
