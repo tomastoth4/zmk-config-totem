@@ -78,10 +78,10 @@
 
         symbols {
             bindings = <
-        &kp EXCLAMATION  &kp AT            &kp HASH        &kp DOLLAR            &trans       &kp LS(PLUS)  &kp MINUS     &kp LSHFT     &kp LS(DQT)    &kp LS(DQT)
-        &kp TILDE        &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PIPE     &kp EQUAL     &kp LS(RPAR)  &kp LS(RBRC)  &trans         &trans
-&trans  &kp GRAVE        &kp BACKSLASH     &kp PERCENT     &kp AMPERSAND         &kp UNDER    &kp LSHFT     &kp LSHFT     &kp LSHFT     &kp LS(COLON)  &kp SQT      &trans
-                                           &trans          &trans                &trans       &trans        &trans        &trans
+        &kp EXCLAMATION  &kp AT            &kp HASH        &kp DOLLAR            &trans       &kp PLUS      &kp MINUS              &kp ASTERISK      &kp SLASH          &kp LS(DOUBLE_QUOTES)
+        &kp TILDE        &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PIPE     &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp SEMICOLON
+&trans  &kp GRAVE        &kp BACKSLASH     &kp PERCENT     &kp AMPERSAND         &kp UNDER    &kp QUESTION  &kp LESS_THAN          &kp GREATER_THAN  &kp COLON          &kp SQT                &trans
+                                           &trans          &trans                &trans       &trans        &trans                 &trans
             >;
         };
     };
